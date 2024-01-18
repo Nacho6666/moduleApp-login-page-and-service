@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;           /* 高度設定為視窗高度的40% */
+    width: 50%;             /* 寬度設定為父容器寬度的50% */
+    max-width: 500px;       /* 最大寬度限制，以避免在大螢幕上過於寬闊 */
+    box-shadow: 3px 3px 5px 6px #cccccc;
+    background-color: #333;
+    padding: 20px;          /* 調整內邊距 */
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    input {
+        background-color: #ccc;
+        color: #666;
+        padding: 10px 20px;
+        border: 0px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    button {
+        width: 250px;
+        text-align: center;
+        padding: 20px 0;
+        background-color: #5c2ee4;
+        color: #fff;
+        border: 0px;
+        outline: none;
+        margin-top: 40px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &[disabled] {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    }
+}
